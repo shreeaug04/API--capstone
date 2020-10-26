@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-10 Global Trend</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="global-header">
+        <h1 class="title">Covid-19 Global Trend</h1>
+    
+    </header>
+    <main>
+        <h3>
+        <p> A COVID-19 dashboard is available providing up to date data from around the world. Showing the latest 
+            information related to COVID-19.</p>
+            <p>Most countries are reporting more and more new COVID-19 cases every day: Data for the global Numbers shows that the
+            pandemic is far from over.</p>
+            </h3>
+        <section class="statistics">
+            <div class="row">
+                <div class="stats boxes">
+                    <h3>Today's confirmed cases</h3>
+                    <div class="stat-number" id="today-confirmed"></div>
+                </div>
+                <div class="stats boxes">
+                    <h3>Today's deaths</h3>
+                    <div class="stat-number" id="today-death"></div>
+                </div>
+                <div class="stats boxes">
+                    <h3>Today's recovered</h3>
+                    <div class="stat-number" id="today-recovered"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="stats boxes">
+                    <h3>Total confirmed cases</h3>
+                    <div class="stat-number" id="total-confirmed"></div>
+                </div>
+                <div class="stats boxes">
+                    <h3>Total deaths</h3>
+                    <div class="stat-number" id="total-death"></div>
+                </div>
+                <div class="stats boxes">
+                    <h3>Total recovered</h3>
+                    <div class="stat-number" id="total-recovered"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <form class="search-form">
+                <label for="search-by-country">Select the Country</label>
+                 <select id="search-by-country">
+                </select>
+                <button type="submit">Go!</button>
+            </form>
+        </section>
+        <section id="results"></section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
